@@ -614,3 +614,142 @@ puma (4.2.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
   Rendering /Users/kellyegreene/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/kellyegreene/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /Users/kellyegreene/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.6ms)
+Started GET "/about" for 127.0.0.1 at 2019-10-31 17:47:02 -0700
+Processing by StaticController#about as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (8.9ms)
+Completed 200 OK in 106ms (Views: 70.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2019-10-31 19:08:36 -0700
+Processing by StaticController#about as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (8.1ms)
+Completed 200 OK in 99ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2019-10-31 19:09:53 -0700
+Processing by StaticController#about as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (9.1ms)
+Completed 200 OK in 97ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/some_page" for ::1 at 2019-10-31 19:10:01 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/some_page"):
+  
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+puma (4.2.1) lib/puma/configuration.rb:228:in `call'
+puma (4.2.1) lib/puma/server.rb:667:in `handle_request'
+puma (4.2.1) lib/puma/server.rb:470:in `process_client'
+puma (4.2.1) lib/puma/server.rb:328:in `block in run'
+puma (4.2.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  Rendering /home/stevendc/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/stevendc/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/stevendc/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /home/stevendc/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [1 times] (8.7ms)
+  Rendered /home/stevendc/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (46.6ms)
+  Rendering /home/stevendc/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/stevendc/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/stevendc/.rvm/gems/ruby-2.5.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (247.3ms)
+Started GET "/some_page" for ::1 at 2019-10-31 19:11:07 -0700
+Processing by StaticController#some_page as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (7.2ms)
+Completed 200 OK in 101ms (Views: 66.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2019-10-31 19:11:16 -0700
+Processing by StaticController#about as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.5ms)
+Completed 200 OK in 39ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/some_page" for ::1 at 2019-10-31 19:11:26 -0700
+Processing by StaticController#some_page as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/some_page" for ::1 at 2019-10-31 19:12:36 -0700
+Processing by StaticController#some_page as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/some_page" for ::1 at 2019-10-31 19:12:57 -0700
+Processing by StaticController#some_page as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (1.0ms)
+Completed 200 OK in 42ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/some_page" for ::1 at 2019-10-31 19:13:19 -0700
+Processing by StaticController#some_page as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (0.6ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/some_page" for ::1 at 2019-10-31 19:13:38 -0700
+Processing by StaticController#some_page as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.5ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/some_page" for ::1 at 2019-10-31 19:13:51 -0700
+Processing by StaticController#some_page as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.6ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2019-10-31 19:13:57 -0700
+Processing by StaticController#about as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (0.4ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/some_page" for ::1 at 2019-10-31 19:14:05 -0700
+Processing by StaticController#some_page as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.5ms)
+Completed 200 OK in 37ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/some_page" for ::1 at 2019-10-31 19:14:38 -0700
+Processing by StaticController#some_page as HTML
+  Rendering static/some_page.html.erb
+  Rendered static/some_page.html.erb (0.6ms)
+Completed 200 OK in 49ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2019-10-31 19:14:43 -0700
+Processing by StaticController#about as HTML
+  Rendering static/about.html.erb
+  Rendered static/about.html.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+

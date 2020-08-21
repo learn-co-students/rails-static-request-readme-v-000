@@ -4,3 +4,4 @@ class StaticController < ApplicationController
     render "static/some_page"
   end
 end
+NN
